@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Clients</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header fixed-top">
+        <div class="container">
+            <a href="index.html" class="logo"><h1>Dental<span>Care</span></h1></a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#work-process">Work Process</a>
+                <a href="clients.html" id="clients-link">Patients</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+    <!-- Clients Section Start -->
+    <section class="clients" id="clients">
+        <div class="container">
+           
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="client-list">
+                    <!-- Client data will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load client data from localStorage
+            let clients = localStorage.getItem('clients');
+            clients = clients ? JSON.parse(clients) : [];
+
+            const clientList = document.getElementById('client-list');
+
+            // Function to display client data in the table
+            function displayClients() {
+                clientList.innerHTML = '';
+                clients.forEach((client, index) => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${client.name}</td>
+                        <td>${client.email}</td>
+                        <td>${client.number}</td>
+                        <td>${client.date}</td>
+                        <td><button class="btn btn-danger btn-sm" onclick="deleteClient(${index})">Delete</button></td>
+                    `;
+                    clientList.appendChild(row);
+                });
+            }
+
+            // Call the displayClients function initially to populate the table
+            displayClients();
+
+            // Function to delete a client
+            window.deleteClient = (index) => {
+                if (confirm('Are you sure you want to delete this client?')) {
+                    clients.splice(index, 1);
+                    localStorage.setItem('clients', JSON.stringify(clients));
+                    displayClients();
+                }
+            };
+        });
+    </script>
+</body>
+</html>

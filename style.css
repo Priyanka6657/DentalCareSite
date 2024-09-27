@@ -1,0 +1,297 @@
+/* Custom CSS */
+
+/* Header Styles */
+/* Custom CSS */
+/* Custom CSS */
+
+/* Header Styles */
+.header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #00bcd4;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    color: #333333;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.nav a:hover {
+    color: #00bcd4;
+}
+
+.link-btn {
+    background-color: #00bcd4;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.link-btn:hover {
+    background-color: #0097a7;
+}
+
+
+/* Home Section Styles */
+
+.home {
+    background-color: #dad5d5;
+    padding: 100px 0;
+    margin-top:-50px;
+    height:700px;
+}
+
+.home h3 {
+    
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.home .link-btn {
+    margin-top: 20px;
+}
+
+/* About Section Styles */
+.about {
+    padding: 100px 0;
+    background-color: #dad5d5;
+}
+
+.about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0px;
+    text-align: center;
+    margin-top:80px;
+}
+
+
+.about img {
+    max-width: 100%;
+}
+
+/* Services Section Styles */
+.services {
+    padding: 100px 0;
+    background-color:  #dad5d5;
+}
+
+.services h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.service-item {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-item i {
+    font-size: 48px;
+    color: #00bcd4;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Work Process Section Styles */
+.work-process {
+    background-color: #dad5d5;
+    padding: 100px 0;
+}
+
+.work-process h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    
+}
+
+.process-item {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.process-icon {
+    background-color: #00bcd4;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.process-icon i {
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.process-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.process-item p {
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Clients Section Styles */
+.clients {
+    padding: 100px 0;
+}
+
+.clients h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.clients img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #706f6f;
+    padding: 100px 0;
+}
+
+
+.contact .form-group {
+    margin-bottom: 30px;
+}
+
+.contact .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #067c8b;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+.contact button:hover {
+    background-color: #0097a7;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.footer h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.social-links a:hover {
+    color: #0494a7;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    color: #333333;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f2f2f2;
+}
